@@ -23,6 +23,6 @@
   },
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "start": "rm -rf node_modules && npm i && tsc --build && node build/index.js"
+    "start": "rm -rf node_modules && npm i && npx playwright install-deps && tsc --build && node build/index.js"
   }
 }
